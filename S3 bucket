@@ -1,0 +1,20 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_s3_bucket" "tf_test_baivab_bucket" {
+  bucket = "vikas-kamble-devops-2026-789654"
+
+  tags = {
+    Name        = "MyTerraformBucket"
+    Environment = "Dev"
+  }
+}
+"main.tf" 12L, 220B     
+
+
+terraforrm init 
+terraform validate
+terraform plan
+terraform apply
+terraform destory
